@@ -9,6 +9,6 @@ public class LadderCollection implements IEntityCollection<Ladder> {
     public static Map<Integer, Ladder> ladders = new HashMap<>();
 
     public void add(Ladder l){
-        ladders.put(l.start, l);
+        ladders.put(l.getStart(), l);
     }
 }

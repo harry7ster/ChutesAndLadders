@@ -12,16 +12,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Player {
-    String name;
-    Pawn userPawn;
-    int currentPos = 0;
-    static int WINNER_NUM = 100;
+    private String name;
+    private Pawn userPawn;
+    private int currentPos = 0;
     private static final Logger logger = LoggerFactory.getLogger(Player.class);
 
     public Player(String name, Pawn pawn){
         this.name = name;
         this.userPawn = pawn;
-        PawnCollection.pawns.add(pawn);
+        PawnCollection.getPawns().add(pawn);
     }
 
     public boolean move(){
@@ -69,4 +68,5 @@ public class Player {
     public void setUserPawn(Pawn userPawn) {
         this.userPawn = userPawn;
     }
+
 }

@@ -1,8 +1,8 @@
 package com.candidate.chutesladders.data;
 
 public class Pawn {
-    String color;
-    String name;
+    private String color;
+    private String name;
 
 
     public Pawn(String name, String color){

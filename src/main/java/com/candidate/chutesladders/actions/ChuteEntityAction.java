@@ -11,8 +11,8 @@ public class ChuteEntityAction extends EntityAction {
 
     @Override
     public int move(int currentPosition) {
-        Chute chute = ChuteCollection.chutes.get(currentPosition);
+        Chute chute = ChuteCollection.getChutes().get(currentPosition);
 
-        return chute==null?currentPosition:chute.end;
+        return chute==null?currentPosition:chute.getEnd();
     }
 }

@@ -6,10 +6,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PawnCollection implements IEntityCollection<Pawn>{
-    public static List<Pawn> pawns = new ArrayList<>();
+    private static List<Pawn> pawns = new ArrayList<>();
 
     @Override
     public void add(Pawn pawn) {
 
+    }
+
+    public static List<Pawn> getPawns() {
+        return pawns;
+    }
+
+    public static void setPawns(List<Pawn> pawns) {
+        PawnCollection.pawns = pawns;
     }
 }

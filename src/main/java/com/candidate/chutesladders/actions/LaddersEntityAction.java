@@ -11,7 +11,7 @@ public class LaddersEntityAction extends EntityAction {
     @Override
     public int move(int currentPosition) {
         Ladder ladder = LadderCollection.ladders.get(currentPosition);
-        return ladder==null?currentPosition:ladder.end;
+        return ladder==null?currentPosition:ladder.getEnd();
     }
 
 }
