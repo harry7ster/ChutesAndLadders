@@ -16,3 +16,4 @@ If it was a real project:   (I have already included some deign flexibilty for i
 
 
 - The game can have more details to the entities like Player (player rank etc), Chutes(shape, color etc). So i have created business object, so that the fields can be added as per the requirement
+- When starting the game, the player with highest number starts the game. It can happen that two users get same high numbner, so we repeat the process until a single user gets hihest number, and then change the players sequence by putting that user in the front.
